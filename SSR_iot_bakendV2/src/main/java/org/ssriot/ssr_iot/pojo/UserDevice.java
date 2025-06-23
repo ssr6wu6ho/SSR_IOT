@@ -1,5 +1,10 @@
 package org.ssriot.ssr_iot.pojo;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
 public class UserDevice {
     private Integer id;
     private Integer userId;
@@ -10,14 +15,7 @@ public class UserDevice {
     private User user;
     private MyDevice device;
 
-    public UserDevice(Integer id, Integer userId, Integer deviceId, Integer permissionLevel, User user, MyDevice device) {
-        this.id = id;
-        this.userId = userId;
-        this.deviceId = deviceId;
-        this.permissionLevel = permissionLevel;
-        this.user = user;
-        this.device = device;
-    }
+
 
     public Integer getId() {
         return id;

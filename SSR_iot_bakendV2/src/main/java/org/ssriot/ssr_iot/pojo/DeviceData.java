@@ -15,14 +15,6 @@ public class DeviceData {
     // 关联属性
     private MyDevice device; // 多对一关系
 
-    public DeviceData(Integer ID, Double temperature, Double humidity, LocalDateTime updateTime, Integer deviceId, MyDevice device) {
-        this.ID = ID;
-        this.temperature = temperature;
-        this.humidity = humidity;
-        this.updateTime = updateTime;
-        this.deviceId = deviceId;
-        this.device = device;
-    }
 
     public Integer getID() {
         return ID;
